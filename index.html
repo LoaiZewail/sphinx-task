@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sphinx Task</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <style>
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background: url('assets/Preloader.gif') 50% 50% no-repeat rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader"></div>
+    <div id="scaleable-wrapper" class="scaleable-wrapper">
+        <div id="page-content" class="page-content">
+
+            <div class="col-xs-12 header">
+                <div class="headertitle">
+                    <h2>Circle, choose and write.</h2>
+                </div>
+
+                <div class="box1">
+                    <div class="resourseBtn">
+                        <img src="assets/resourse_icon.png" />
+                    </div>
+                </div>
+
+                <div class="box1">
+                    <div class="helpBtn">
+                        <img src="assets/help_icon.png" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="headwrapper">
+                <div class="col-xs-12 head">
+                    <div class="carousel-inner">
+                        <div class="item item1 active">
+                            <div class="text-center">
+                                <img src="assets/1.png" />
+
+                                <div class="question question1">
+                                    What's <span class="option" Answer="correct"><b>this</b></span>
+                                    <b>/</b> <span class="option" Answer="incorrect"><b>that</b></span>?
+                                </div>
+
+                                <div class="question question2">
+                                    <span class="option" Answer="correct"><b>It's</b></span> <b>/</b>
+                                    <span class="option" Answer="incorrect"><b>They're</b></span> an orange
+                                    school bag.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item item2">
+                            <div class=" text-center">
+                                <img src="assets/2.png" class="" />
+
+                                <div class="question question3">
+                                    What are <span class="option" Answer="incorrect"><b>these</b></span>
+                                    <b>/</b> <span class="option" Answer="correct"><b>those</b></span>?
+                                </div>
+
+                                <div class="question question4">
+                                    <span class="option" Answer="incorrect"><b>It's</b></span> <b>/</b>
+                                    <span class="option" Answer="correct"><b>They're</b></span> green pens.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 footer">
+                <div class="box">
+                    <div class="reloadBtnAll">
+                        <img src="assets/replay_icon.png" class="" />
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="reloadBtnScreen">
+                        <img src="assets/reload_icon.png" class="" />
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="showAnsBtn">
+                        <img src="assets/showAns_icon.png" class="" />
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="backBtn disabled" disabled>
+                        <img src="assets/back_icon.png" class="" />
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="pageNumber">1 of 2</div>
+                </div>
+
+                <div class="box">
+                    <div class="nextBtn">
+                        <img src="assets/next_icon.png" class="" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.loader').fadeOut(1500);
+        });
+    </script>
+</body>
+
+</html>
